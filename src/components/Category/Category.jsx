@@ -1,26 +1,16 @@
-import "./Category.scss";
+import './Category.scss'
 
-import cat1 from "../../assets/category/cat-1.jpg"
+import Products from '../Products/Products'
 
 const Category = () => {
-    return (
-        <div className="shop-by-category">
-            <div className="categories">
-                <div className="category">
-                    <img src={cat1} alt = "category1" />
-                </div>
-                <div className="category">
-                    <img src={cat1} alt = "category1" />
-                </div>
-                <div className="category">
-                    <img src={cat1} alt = "category1" />
-                </div>
-                <div className="category">
-                    <img src={cat1} alt = "category1" />
-                </div>
-            </div>
-        </div>
-    );
-};
+  return (
+    <div className="category-main-content">
+      <div className="layout">
+        <div className="category-title">Category Title</div>
+        <Products innerPage = {true}/>
+      </div>
+    </div>
+  )
+}
 
-export default Category;
+export default Category
