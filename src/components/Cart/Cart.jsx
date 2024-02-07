@@ -28,7 +28,10 @@ const Cart = ({ setShowCart }) => {
                             <span className="text total">₹ 4500</span>
                         </div>
                         <div className="total-btn">
-                            <button className='checkout-cta'>Checkout</button>
+                            <button className='checkout-cta'>
+                                <BsCartX/>
+                                Checkout
+                            </button>
                         </div>
                     </div>
                 </>

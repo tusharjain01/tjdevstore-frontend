@@ -1,13 +1,13 @@
 import "./Banner.scss";
 
-import BannerImg from '../../../assets/banner-img.png'
+import BannerImg from '../../../assets/banner-img3.webp'
 
 const Banner = () => {
     return (
         <div className="hero-banner">
             <div className="content">
                 <div className="text-content">
-                    <h1>SALES</h1>
+                    <h1>Sales</h1>
                     <p>Lorem ipsum dolor sit, amet consectetur 
                         adipisicing elit. Ea culpa corporis rerum incidunt inventore alias facilis 
                         illum! Excepturi culpa recusandae saepe neque ratione autem voluptas!
