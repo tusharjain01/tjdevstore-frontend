@@ -7,6 +7,7 @@ const params = {
 }
 
 export const fetchDataFromApi = async(url) => {
+    // console.log(process.env.REACT_APP_DEV_URL + url);
     try{
         const { data } = await axios.get(
             process.env.REACT_APP_DEV_URL + url,

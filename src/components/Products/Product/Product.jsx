@@ -1,16 +1,26 @@
+import { useNavigate } from "react-router-dom";
+
 import "./Product.scss";
 
-import prod from '../../../assets/products/headphone-prod-1.webp'
+// import prod from '../../../assets/products/headphone-prod-1.webp'
 
-const Product = () => {
+const Product = ({ id,data }) => {
+
+    const navigate = useNavigate()
+
+    // console.log(id);
+
     return (
-        <div className="product-card">
+        <div className="product-card"
+            onClick={()=>navigate(`/product/${id}`)}
+            key={id}
+        >
             <div className="thumbnail">
-                <img src={prod} alt="product name" />
+                <img src={data?.img?.data?.attributes?.url} alt="product name" />
             </div>
             <div className="prod-details">
-                <span className="name">Product Name</span>
-                <span className="price">₹499</span>
+                <span className="name">{data.title}</span>
+                <span className="price">₹{data.price}</span>
             </div>
         </div>
     );
