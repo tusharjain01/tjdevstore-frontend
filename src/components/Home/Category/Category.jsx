@@ -17,8 +17,9 @@ const Category = ({ categories }) => {
                         className="category"
                         onClick={() => navigate(`/category/${item.id}`)}
                     >
-                        <img src={
-                        item.attributes.img.data.attributes.url} alt={item.attributes.title} />
+                        <img 
+                        loading='lazy'
+                        src={item.attributes.img.data.attributes.url} alt={item.attributes.title} />
                     </div>
                 ))}
             </div>

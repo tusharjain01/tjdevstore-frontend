@@ -16,7 +16,7 @@ const Product = ({ id,data }) => {
             key={id}
         >
             <div className="thumbnail">
-                <img src={data?.img?.data?.attributes?.url} alt="product name" />
+                <img loading="lazy" src={data?.img?.data?.attributes?.url} alt="product name" />
             </div>
             <div className="prod-details">
                 <span className="name">{data.title}</span>

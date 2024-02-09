@@ -24,7 +24,7 @@ const Home = () => {
         })
     }
     const getProducts = () => {
-        fetchDataFromApi('/api/products?populate=*').then(res => {
+        fetchDataFromApi('/api/products?populate=*&sort[0]=desc&pagination[start]=0&pagination[limit]=8').then(res => {
             // console.log(res);
             setProducts(res);
         })

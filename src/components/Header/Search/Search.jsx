@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import { MdClose } from 'react-icons/md'
 
 import "./Search.scss";
-import prod1 from '../../../assets/products/earbuds-prod-3.webp'
+// import prod1 from '../../../assets/products/earbuds-prod-3.webp'
 import useFetch from '../../../hooks/useFetch'
 
 const Search = ({ setShowSearch }) => {

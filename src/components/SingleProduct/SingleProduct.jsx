@@ -13,7 +13,7 @@ import {
     FaTwitter
 } from 'react-icons/fa'
 
-import prod1 from "../../assets/products/watch-prod-1.webp"
+// import prod1 from "../../assets/products/watch-prod-1.webp"
 import useFetch from "../../hooks/useFetch";
 import { Context } from "../../util/context";
 
@@ -30,7 +30,7 @@ const SingleProduct = () => {
             <div className="layout">
                 <div className="single-product-page">
                     <div className="left">
-                        <img src={data?.data?.attributes?.img?.data?.attributes?.formats?.small?.url} alt="headphone" />
+                        <img loading="lazy" src={data?.data?.attributes?.img?.data?.attributes?.formats?.small?.url} alt="headphone" />
                     </div>
                     <div className="right">
                         <span className="name">{data?.data?.attributes?.title}</span>

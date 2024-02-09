@@ -1,13 +1,13 @@
 import { useContext } from "react";
 
-import prod1 from '../../../assets/products/speaker-prod-1.webp'
+// import prod1 from '../../../assets/products/speaker-prod-1.webp'
 import { MdClose } from "react-icons/md";
 import { Context } from "../../../util/context";
 import "./CartItem.scss";
 
 const CartItem = () => {
 
-    const { cartItems, handleAddToCart, handleRemoveFromCart,handleCartProductQuantity } = useContext(Context)
+    const { cartItems, handleRemoveFromCart,handleCartProductQuantity } = useContext(Context)
 
     return (
         <div className="cart-products">
