@@ -30,7 +30,7 @@ const SingleProduct = () => {
             <div className="layout">
                 <div className="single-product-page">
                     <div className="left">
-                        <img loading="lazy" src={data?.data?.attributes?.img?.data?.attributes?.formats?.small?.url} alt="headphone" />
+                        <img loading="lazy" src={data?.data?.attributes?.img?.data?.[0]?.attributes?.formats?.small?.url} alt="headphone" />
                     </div>
                     <div className="right">
                         <span className="name">{data?.data?.attributes?.title}</span>
